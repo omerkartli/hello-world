@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import Greet from './components/Greet';
+import Welcome from './components/Welcome';
+import Navbar,{AltNavbar} from './components/Navbar';
+import Govde from './components/Govde';
 
 function App() {
+  const name1="Ömer K"// jsx den gelen
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello World! ÖK
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Greet />
+      <Welcome />
+     
+      <h1> Merhaba </h1>
+      <h1> 10+10 </h1>
+      <h1>{10+10}</h1>
+      <h1>{'ömer Kartlı'.toUpperCase()}</h1>
+      <h1>{name1.toUpperCase()}</h1>
+      <h2 style={{backgroundColor:'yellow'}}>ÖmerCss</h2>
+      <Navbar />
+      <AltNavbar />
+      <Govde />
     </div>
   );
 }

@@ -36,3 +36,38 @@
     transform: rotate(360deg);
   }
 }
+
+.navbar{
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  background-color: #ddd;
+  color: black;
+  margin: 0px auto;
+  letter-spacing: 1px;
+}
+
+.navbar a{
+  color: black;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.altNavbar{
+  height: 25px;
+  background-color: orange;
+  width: 100%;
+}
+
+.govde{
+  height: 50vh;
+  /* ekranın yarısını kapla demek */
+  width: 100%;
+  background-color: #ddd;
+  color: black;
+
+}
+
+.btn{
+  background-color: aqua;
+}
