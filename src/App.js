@@ -3,12 +3,21 @@ import Greet from './components/Greet';
 import Welcome from './components/Welcome';
 import Navbar,{AltNavbar} from './components/Navbar';
 import Govde from './components/Govde';
+import { useState } from 'react';
 
 function App() {
   const name1="Ömer K"// jsx den gelen
 
+  const [deger, setDeger] = useState(112);//hooks state burda return dışında
+  const Azaltf = () => {
+    setDeger(deger-1)
+  }
   return (
     <div className="App">
+
+      <p><button onClick={()=>{setDeger(deger+1)}}>Artır</button></p>
+      <p>{deger}</p>
+      <p><button onClick={Azaltf}>Azalt</button></p>
       <Greet />
       <Welcome />
      
